@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'mvcbruna'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1DCD2456519D4AFFBBA8E2C04A1C02AA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6659B8990E9345348D0DA1FB52D51F77 }}
           package: .
