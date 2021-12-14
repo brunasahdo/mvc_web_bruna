@@ -33,12 +33,12 @@ namespace E_JOGOS.Models
         public void Create(Equipe nova_equipe) //recebe o objeto e grava no csv
         {
 
-            string[] linha = { $"{nova_equipe.IdEquipe}; {nova_equipe.Nome}; {nova_equipe.Imagem}" }; //como as infos serão gravadas
+            //string[] linha = { $"{nova_equipe.IdEquipe}; {nova_equipe.Nome}; {nova_equipe.Imagem}" }; //como as infos serão gravadas
             //se quiser, fazer um método Prepare que retorna a string acima
 
-            //File.AppendAllText(path, $"{nova_equipe.IdEquipe}; {nova_equipe.Nome}; {nova_equipe.Imagem}"); Perguntar
+            File.AppendAllText(path, $"{nova_equipe.IdEquipe}; {nova_equipe.Nome}; {nova_equipe.Imagem}"); //Perguntar
 
-            File.AppendAllLines(path, linha); //recebe array na segunda entrada. Então definimos acima um array de tamanho 1.
+           // File.AppendAllLines(path, linha); //recebe array na segunda entrada. Então definimos acima um array de tamanho 1.
         }
 
         public void Delete(int idEquipe)
@@ -71,7 +71,7 @@ namespace E_JOGOS.Models
             throw new System.NotImplementedException();
         }
 
-        //Métodos
+        
 
 
     }
