@@ -36,3 +36,4 @@ C:\Users\Bruna Larissa\source\repos\E-JOGOS\E-JOGOS\obj\Debug\net5.0\ref\E-JOGOS
 C:\Users\Bruna Larissa\source\repos\E-JOGOS\E-JOGOS\obj\Debug\net5.0\E-JOGOS.pdb
 C:\Users\Bruna Larissa\source\repos\E-JOGOS\E-JOGOS\obj\Debug\net5.0\E-JOGOS.genruntimeconfig.cache
 C:\Users\Bruna Larissa\source\repos\E-JOGOS\E-JOGOS\obj\Debug\net5.0\E-JOGOS.csproj.CopyComplete
+C:\Users\Bruna Larissa\source\repos\E-JOGOS\E-JOGOS\obj\Debug\net5.0\Razor\Views\Equipe\Index.cshtml.g.cs

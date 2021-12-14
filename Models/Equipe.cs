@@ -8,7 +8,7 @@ namespace E_JOGOS.Models
 
     {
 
-        private const string path = "database/equipe.csv"; //atributo
+         const string path = "database/equipe.csv"; //atributo
 
 
         //Construtor 
@@ -36,9 +36,9 @@ namespace E_JOGOS.Models
             //string[] linha = { $"{nova_equipe.IdEquipe}; {nova_equipe.Nome}; {nova_equipe.Imagem}" }; //como as infos serão gravadas
             //se quiser, fazer um método Prepare que retorna a string acima
 
-            File.AppendAllText(path, $"{nova_equipe.IdEquipe}; {nova_equipe.Nome}; {nova_equipe.Imagem}"); //Perguntar
+            File.AppendAllText(path, $"{nova_equipe.IdEquipe}; {nova_equipe.Nome}; {nova_equipe.Imagem}"); //Perguntar... Funciona!
 
-           // File.AppendAllLines(path, linha); //recebe array na segunda entrada. Então definimos acima um array de tamanho 1.
+           //File.AppendAllLines(path, linha); //recebe array na segunda entrada. Então definimos acima um array de tamanho 1.
         }
 
         public void Delete(int idEquipe)
@@ -53,10 +53,10 @@ namespace E_JOGOS.Models
 
             foreach (string linha in linhas)
             {
-                Equipe equipe = new();
-                IdEquipe = int.Parse(linha.Split(';')[0]);
-                Nome = linha.Split(';')[1];
-                Imagem = linha.Split(';')[2];
+                Equipe equipe = new Equipe();
+                equipe.IdEquipe = int.Parse(linha.Split(';')[0]);
+                equipe.Nome = linha.Split(';')[1];
+                equipe.Imagem = linha.Split(';')[2];
 
                 equipes.Add(equipe);
             }
