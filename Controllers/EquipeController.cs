@@ -35,14 +35,22 @@ namespace E_JOGOS.Controllers
             //chamando a funcao create do objeto passando a nova equipe.
             equipeModel.Create(nova_equipe);
 
-            
+
             ViewBag.Equipes = equipeModel.ReadAll();
 
 
             return LocalRedirect("~/Equipe");
-
-
-
         }
+        public IActionResult Remover(IFormCollection form)
+        {
+            int ID = int.Parse(form["IdDeletar"]);
+
+            equipeModel.Delete(ID);
+
+            ViewBag.Equipes = equipeModel.ReadAll();
+
+            return LocalRedirect("~/Equipe");
+        }
+        
     }
 }
