@@ -9,7 +9,7 @@ namespace E_JOGOS.Models
 
     {
 
-         private const string path = "Database/equipe.csv"; //atributo
+         private const string path = "database/equipe.csv"; //atributo
 
 
         //Construtor 
