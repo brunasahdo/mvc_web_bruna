@@ -26,7 +26,7 @@ namespace E_JOGOS.Models
 
         //Métodos
 
-        private 
+         
 
         //Métodos exigidos pela interface
         
